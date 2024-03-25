@@ -1,0 +1,74 @@
+<!--!+tab 으로 기본코드 시작, alt+b, -->
+<!DOCTYPE html>
+<html lang="en">
+<head>  <!--화면에 나타나진 않고 문서에 대한 설명, title부분만 나옴-->
+    <meta charset="UTF-8">  <!--html 문서 자체를 코드하는 방법, 문자코드를 사용하겠다고 선언-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--화면 크기가 다른곳에서 볼 때 설정이 가능하도록-->
+    <title>My first webpage</title> <!--웹페이지 제목-->
+    <style>
+        #unique{
+            background:yellow;
+        }
+        .green{
+            color:forestgreen
+        }
+        .blue{
+            color:blue
+        }
+        a[href]{
+            color:darkblue
+        }
+        a[target="_blank"]{
+            color:darkblue
+        }
+    </style>
+    <title>외부 스타일 시트</title>
+    <link rel="stylesheet" href="stlyle.css">
+</head>
+<style>
+    table, th, td{
+        border:1px solid #f0f
+    }
+</style>
+<body>
+    <style>
+        h1{
+            font-size:24px;
+            color:aqua;
+        }
+    </style>
+    <h1>css basic</h1>
+    <h1 style="color:cornflowerblue;font-size:24px">조시현</h1>
+    <p id="unique">안녕하세요.<br>
+    전자공학과 19학번 조시현 입니다. 기초웹프로그밍 수업을 듣고있습니다 <br> </p>
+    <hr>
+    <p class="green">자주 찾는 웹사이트1 : <a href="https://www.mju.ac.kr/sites/mjukr/intro/intro.html" targer="_blank" title="mju.ac.kr">명지대홈페이지</a>
+    <br>
+    자주 찾는 웹사이트2 : <a href= "#"> https://github.com/josibak/html"</a> 깃사이트</a>
+</a></p>
+
+    <table>
+        <caption>시간표</caption>
+        <tr>
+            <th>시간</th>
+            <th>월요일</th>
+            <th>수요일</th>
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td>기초 웹프로그래밍</td>
+            <td rowspan = "2">기초 웹프로그랭밍</td>
+        </tr>
+        <tr>
+            <td>3교시</td>
+            <td></td>
+        </tr>
+    </table>
+    <img src="./pantom.jpg" alt="포켓몬 팬텀">
+</body>
+</html>

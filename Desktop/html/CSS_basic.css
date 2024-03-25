@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid silver;
+}
+
+a:link{
+  color:orange
+}
+a:visited{
+  color:green
+}
+
+table caption::after{
+  content: "  click each cell";
+  color: red
+}
+
+thead tr{
+  background-color: blue;
+}
+
+tbody tr:nth-child(even){
+  background-color: aqua;
+}
+
+td:hover{
+  background-color: yellow;
+}
+

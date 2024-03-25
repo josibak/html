@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피드백 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>인공지능 소개</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <section>
+        <p>
+            <form action="#">
+                <fieldset>
+                    <legend>기본정보</legend>
+                    <label>아이디(4~8 글자):
+                    <input type="text" value="" minlength="4" maxlength="8", size="10" requied>
+                    </label>
+                <label>비밀번호(4글자이상):
+                    <input type="password" minlength="4" size="10">
+                </label>
+                <br>
+                <label for="email">이메일</label>
+                    <input type="email" id="email">
+                <br>
+                <input type="submit" value="로그인">
+                <input type="reset" value="취소">
+                <input type="button" value="비밀번호 찾기">
+                </fieldset>
+            </form>
+        </p>
+        <p>
+            <form action="#">
+                <fieldset>
+                    <legend>날짜 입력</legend>
+                    <input type="date">
+                    <input type="week">
+                </fieldset>
+            </form>
+        </p>
+    </section>
+
+    <section>
+        <h3>사용해 본 인공지능 서비스</h3>
+        <P>인공지능 종류</P>
+        <label><input type="checkbox" name="AI service" value="chatgpt">chatgpt</label>
+        <label><input type="checkbox" name="AI service" value="react">react</label>
+        <label><input type="checkbox" name="AI service" value="flow">flow</label>
+        <label><input type="checkbox" name="AI service" value="bard">bard</label>
+    </section>
+
+    <section>
+        <h3>가장 유용한 서비스</h3>
+        <label><input type="checkbox" name="AI service" value="chatgpt">chatgpt</label>
+        <label><input type="checkbox" name="AI service" value="react">react</label>
+        <label><input type="checkbox" name="AI service" value="flow">flow</label>
+        <label><input type="checkbox" name="AI service" value="bard">bard</label>
+    </section>
+
+    <section>
+        <h3>관심있는 서비스 분야</h3>
+        <form action="#" method="post">
+            <select name="service" id="service">
+                <option value="대화형 챗봇">대화형 챗봇</option>
+                <option value="의료 ai">의료 ai</option>
+                <option value="금융 ai">금융 ai</option>
+                <option value="로봇 ai">로봇 ai</option>
+            </select>
+        </form>
+    </section>
+
+    <section>
+        <h3>만족도레벨</h3>
+        <label><input type="checkbox" name="AI service" value="chatgpt">chatgpt</label>
+        <input type="range" min="1" max="10" value="0"><br>
+        <label><input type="checkbox" name="AI service" value="react">react</label>
+        <input type="range" min="1" max="10" value="0"><br>
+        <label><input type="checkbox" name="AI service" value="flow">flow</label>
+        <input type="range" min="1" max="10" value="0"><br>
+        <label><input type="checkbox" name="AI service" value="bard">bard</label>
+        <input type="range" min="1" max="10" value="0"><br>
+    </section>
+
+    <section>
+        <h3>바라는 서비스 개선 방향</h3>
+        <label for="desc">내용<br>
+            <textarea id="desc" name="desc" readonly></textarea>
+        </label>
+    </section>
+
+    <footer>
+        <p>&copy; 조시현 60192557 gustlwh@naver.com, 03/20 .</p>
+    </footer>
+</body>
+</html>
